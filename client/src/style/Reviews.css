@@ -1,0 +1,251 @@
+.reviews-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rating-summary {
+    display: flex;
+    align-items: center;
+}
+
+.rating-summary h2 {
+    font-size: 2.5rem;
+    margin-right: 10px;
+}
+
+.rating-summary p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+}
+
+.star-filled {
+    color: gold;
+}
+
+.star-empty {
+    color: #ccc;
+}
+
+.reviews-list {
+    margin-bottom: 20px;
+}
+
+.review-card {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review-info {
+    flex: 1;
+}
+
+.review-options {
+    display: flex;
+    gap: 5px;
+}
+
+.review-content {
+    margin-top: 10px;
+}
+
+.load-more-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.load-more-button:hover {
+    background-color: #0056b3;
+}
+
+.review-form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.auth-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* Добавьте стили для иконки троеточия и меню опций */
+.review-options {
+    position: relative;
+}
+
+.options-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.options-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.options-menu button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.options-menu button:hover {
+    background: #f0f0f0;
+}
+
+/* Стиль для формы комментария */
+.review-form {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Стиль для текстового поля ввода */
+.review-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical; /* Позволяет изменять размер по вертикали */
+    box-sizing: border-box; /* Включает паддинг и бордер в ширину/высоту */
+    margin-bottom: 10px;
+    outline: none; /* Убирает стандартное обводку при фокусе */
+}
+
+/* Стиль для текстового поля ввода при фокусе */
+.review-form textarea:focus {
+    border-color: #007bff; /* Цвет бордера при фокусе */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Легкая тень при фокусе */
+}
+
+/* Стиль для кнопки отправки */
+.review-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: 10px;
+}
+
+/* Стиль для кнопки отправки при наведении */
+.review-form button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Легкая тень при наведении */
+}
+
+/* Стиль для кнопки отправки при фокусе */
+.review-form button:focus {
+    outline: none; /* Убирает стандартное обводку при фокусе */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Тень при фокусе */
+}
+
+
+/* Стиль для формы редактирования комментария */
+.edit-form {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Стиль для текстового поля ввода в режиме редактирования */
+.edit-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical; /* Позволяет изменять размер по вертикали */
+    box-sizing: border-box; /* Включает паддинг и бордер в ширину/высоту */
+    margin-bottom: 10px;
+    outline: none; /* Убирает стандартное обводку при фокусе */
+}
+
+/* Стиль для текстового поля ввода в режиме редактирования при фокусе */
+.edit-form textarea:focus {
+    border-color: #007bff; /* Цвет бордера при фокусе */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Легкая тень при фокусе */
+}
+
+/* Стиль для кнопок сохранения и отмены в режиме редактирования */
+.edit-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: 10px;
+    margin-right: 10px; /* Отступ между кнопками */
+}
+
+/* Стиль для кнопок сохранения и отмены при наведении */
+.edit-form button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Легкая тень при наведении */
+}
+
+/* Стиль для кнопок сохранения и отмены при фокусе */
+.edit-form button:focus {
+    outline: none; /* Убирает стандартное обводку при фокусе */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Тень при фокусе */
+}

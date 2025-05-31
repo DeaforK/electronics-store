@@ -1,0 +1,77 @@
+.categorySection {
+    padding-top: 80px;
+}
+
+.categoryTitle {
+    padding: 0 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.categoryCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование по горизонтали */
+    justify-content: center; /* Центрирование по вертикали */
+    text-align: center;
+    padding: 24px 50px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    height: 100%; /* Убедитесь, что карточки занимают всю высоту колонки */
+}
+col p{
+    text-decoration: none;
+}
+.categoryCard:hover {
+    transform: scale(1.05); /* Уменьшено масштабирование для лучшего отображения */
+}
+
+.categoryIcon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px; /* Добавляем отступ между иконкой и текстом */
+}
+
+.categoryName {
+    margin: 0; /* Убираем отступы, чтобы текст был центрирован */
+    color: black;
+    text-decoration: none;
+}
+
+.mt-2 {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .row {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .categoryTitle {
+        padding: 0 30px;
+        justify-content: space-around;
+    }
+
+    .categoryTitle h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 375px) {
+    .categoryTitle {
+        padding: 0 30px;
+        font-size: 10px;
+    }
+
+    .categoryIcon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .categoryCard {
+        padding: 10px;
+    }
+}

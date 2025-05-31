@@ -1,0 +1,85 @@
+.modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+}
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.warehouse-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    background: #f8f9fa;
+    border-left: 1px solid #ddd;
+    padding: 15px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.warehouse-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.warehouse-panel .list-group-item {
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.warehouse-panel .list-group-item:hover {
+    background: #e9ecef;
+}
+
+.warehouse-panel .list-group-item .btn-link {
+    padding: 0;
+    margin: 0;
+}
+
+/* Анимация для панели */
+.panel-fade-enter {
+    opacity: 0;
+    transform: translateX(100%);
+}
+.panel-fade-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+.panel-fade-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+.panel-fade-exit-active {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 300ms, transform 300ms;
+}
+
+/* Анимация для элементов внутри панели (списков товаров и вариаций) */
+.fade-enter {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+.fade-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+.fade-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+.fade-exit-active {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 300ms, transform 300ms;
+}

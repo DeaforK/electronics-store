@@ -1,0 +1,13 @@
+@import url('https://v1.fontapi.ir/css/SFProDisplay:100;200;300;400;500;600;700;800;900');
+/* FavoriteMain.css */
+.favorite-main-container {
+    height: 80vh; /* 80% высоты видимой области */
+    overflow-y: auto; /* Прокрутка по вертикали при необходимости */
+    padding: 1rem; /* Дополнительное пространство для отступов */
+}
+
+.favorite-main-content {
+    height: 100%; /* 100% высоты контейнера */
+    display: flex;
+    flex-direction: column;
+}

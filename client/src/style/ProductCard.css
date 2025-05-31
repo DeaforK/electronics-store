@@ -1,0 +1,143 @@
+.product-card {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.products-image {
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-title {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.price-container {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.original-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.original-price.strike-through {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.discounted-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #e60023;
+    margin-top: 5px;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e60023;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.wishlist-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+.wishlist-icon:active {
+    color: #FF0000;
+}
+
+.product-btn {
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: auto;
+    margin-bottom: 15px;
+    width: 50%;
+    align-self: center;
+}
+
+.product-btn:hover {
+    background-color: #333;
+    color: #FFFFFF;
+}
+
+.no-discount {
+    color: black;
+}
+
+.out-of-stock {
+    opacity: 0.6;
+}
+
+.out-of-stock-text {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #e60023;
+}
+
+.out-of-stock-btn {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+.promotion-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e60023;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 2;
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.original-price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.discount-info {
+    font-size: 1rem;
+    color: #e60023;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}

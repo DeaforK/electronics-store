@@ -1,0 +1,233 @@
+@import url('https://v1.fontapi.ir/css/SFProDisplay:100;200;300;400;500;600;700;800;900');
+
+.order-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #000;
+}
+
+/* AddressStep.js */
+
+.step-indicator {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #6c757d;
+    margin-top: 50px;
+}
+
+.step {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    text-align: center;
+}
+
+.step .step-icon {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+.line-blur {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    overflow: hidden;
+}
+
+.line {
+    width: 100%;
+    height: 100%;
+    border-top: 2px dashed #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.line-blur::before,
+.line-blur::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 33%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    z-index: 1;
+}
+
+.line-blur::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.line-blur::before {
+    left: 0;
+}
+
+.address-card {
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address-card:hover {
+    background-color: #f8f9fa;
+}
+
+.address-type {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 2px 8px;
+    margin-left: 10px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-dark {
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+}
+
+.add-new-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+}
+
+.add-new-address .line-blur {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.add-new-address .icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    z-index: 1;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    justify-content: flex-end;
+}
+
+.action-buttons button {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.custom-modal-width {
+    max-width: 600px;
+}
+
+/* DeliveryStep.js */
+
+.delivery-options {
+    color: #000;
+}
+
+.delivery-option {
+    transition: transform 0.2s ease-in-out;
+}
+
+.delivery-option:hover {
+    transform: translateY(-3px);
+}
+
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-container {
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top {
+    max-height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+
+    width: auto;
+    height: 100px;
+}
+
+.card-img-top:hover {
+    filter: grayscale(0%);
+}
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+.badge {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.delivery-option {
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.delivery-option:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+

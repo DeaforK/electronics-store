@@ -1,0 +1,59 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    margin-top: 100px;
+    padding: 100px 20px; /* Обновлено для мобильных экранов */
+}
+
+.footer-logo {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    line-height: 1.7;
+}
+
+.footer h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.footer-content {
+    padding: 0;
+}
+
+.footer a {
+    color: #CFCFCF;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .footer {
+        padding: 50px 10px;
+    }
+    .footer-logo {
+        max-width: 80px;
+    }
+}

@@ -1,0 +1,67 @@
+.confirmation-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f7f7f7;
+}
+
+.confirmation-content {
+    text-align: center;
+    background: #fff;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.confirmation-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.confirmation-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.confirmation-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.confirmation-actions .btn {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    min-width: 150px;
+    text-transform: uppercase;
+}
+
+.confirmation-actions .btn-primary {
+    background-color: #000;
+    color: #fff;
+}
+
+.confirmation-actions .btn-primary:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.confirmation-actions .btn-secondary {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.confirmation-actions .btn-secondary:hover {
+    background-color: #ddd;
+}

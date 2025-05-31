@@ -1,0 +1,48 @@
+@import url('https://v1.fontapi.ir/css/SFProDisplay:100;200;300;400;500;600;700;800;900');
+.banners-section {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 1.5rem);
+    padding-left: var(--bs-gutter-x, 1.5rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.banners-section .row > * {
+    padding: 0;
+    gap: 0;
+}
+
+.banner-card:hover {
+    transform: scale(1);
+}
+
+.banner-card {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner-card div {
+    padding: 20px;
+    text-align: start;
+}
+
+.banner-card button {
+    padding: 10px 30px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.banner-card img {
+    float: right;
+}
+
+.banner-text-white {
+    color: white;
+}
+
+.btn-outline-light {
+    color: white;
+    border-color: white;
+}

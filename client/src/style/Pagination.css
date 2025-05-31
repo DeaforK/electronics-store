@@ -1,0 +1,16 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-item.disabled .page-link {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.page-item.active .page-link {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}

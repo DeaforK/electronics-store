@@ -1,0 +1,73 @@
+/* Общий стиль дерева категорий */
+.category-tree {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Элемент категории */
+.category-item {
+    margin: 5px 0;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+.category-item.last-item {
+    border-bottom: none;
+}
+
+/* Заголовок категории с кнопкой */
+.category-header {
+    display: flex;
+    align-items: center;
+}
+
+/* Кнопка для раскрытия подкатегорий */
+.toggle-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #000;
+    transition: transform 0.3s ease;
+}
+
+.toggle-button:hover {
+    transform: scale(1.1);
+}
+
+/* Ссылка на категорию */
+.category-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+/* Стили для подкатегорий с анимацией */
+.subcategory-enter {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: scaleY(0.9);
+}
+.subcategory-enter-active {
+    max-height: 500px;
+    opacity: 1;
+    transform: scaleY(1);
+    transition: max-height 300ms ease, opacity 300ms ease, transform 300ms ease;
+}
+.subcategory-exit {
+    max-height: 500px;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.subcategory-exit-active {
+    max-height: 0;
+    opacity: 0;
+    transform: scaleY(0.9);
+    transition: max-height 300ms ease, opacity 300ms ease, transform 300ms ease;
+}

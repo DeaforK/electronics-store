@@ -1,0 +1,592 @@
+/* Секцию нужно отделить от остальных элементов отступом сверху */
+.product-page {
+    padding-top: 100px;
+}
+
+/* ProductImages.js */
+
+/* Миниатюры */
+.product-images img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.product-images img:hover {
+    transform: scale(1.1);
+    border-color: #000;
+}
+
+/* Выбранное изображение */
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    height: 500px; /* Ограничение по высоте */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected-image {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    transition: opacity 0.5s ease;
+}
+
+/* Анимация плавного переключения */
+.selected-image {
+    opacity: 0;
+}
+
+.selected-image.show {
+    opacity: 1;
+}
+
+
+
+
+
+/* ProductDetails.js */
+
+
+ /* Основной контейнер с отступами */
+ .product-details {
+    padding: 30px;
+    background-color: #f8f9fa;
+}
+
+/* Заголовок секции "Характеристики" */
+.product-details h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+.product-details-text{
+    padding: 0 20px;
+}
+
+/* Заголовок таблицы */
+.product-specs-header {
+    padding: 0 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Стили для таблицы характеристик */
+.product-specs {
+    margin-bottom: 20px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.product-specs th,
+.product-specs td {
+    width: 85%;
+    padding: 12px 20px;
+    vertical-align: middle;
+}
+
+.product-specs th {
+    font-weight: bold;
+}
+tbody{
+    width: 100%;
+
+}
+.product-specs td {
+    text-align: left;
+}
+
+
+/* Кнопка "Посмотреть больше" */
+.btn-show-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-show-more:hover {
+    background-color: #e9ecef;
+}
+
+.btn-show-more svg {
+    margin-left: 8px;
+}
+@media (max-width: 576px) {
+    .product-details {
+        padding: 15px;
+    }
+
+    .product-specs-header {
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .product-specs th,
+    .product-specs td {
+        padding: 8px;
+    }
+
+    .btn-show-more {
+        padding: 8px;
+    }
+}
+
+
+
+/* ProductPage.css или другой CSS-файл */
+.action-buttons-container {
+    display: flex;
+    gap: 10px; /* Устанавливаем расстояние между кнопками */
+}
+
+.action-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.action-button-outline {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
+/* ProductPage.css */
+.attribute-item {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+
+.attribute-group {
+    margin-bottom: 1rem;
+}
+
+.attribute-buttons {
+    margin-top: 0.5rem;
+}
+
+.attribute-buttons .btn {
+    margin-right: 0.5rem;
+}
+
+
+
+/* Основной контейнер с отступами */
+.product-details {
+    padding: 30px;
+    background-color: #f8f9fa;
+}
+
+/* Заголовок секции "Характеристики" */
+.product-details h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+.product-details-text {
+    padding: 0 20px;
+}
+
+/* Заголовок таблицы */
+.product-specs-header {
+    padding: 0 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Стили для таблицы характеристик */
+.product-specs {
+    margin-bottom: 20px;
+    width: 100%; /* Устанавливаем таблицу на всю ширину контейнера */
+    border-collapse: collapse; /* Убираем отступы между границами */
+    border-spacing: 0;
+}
+
+.product-specs th,
+.product-specs td {
+    padding: 12px 20px; /* Добавляем больше отступов внутри ячеек */
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd; /* Добавляем нижнюю границу для ячеек */
+}
+
+.product-specs th {
+    font-weight: bold;
+    width: 30%; /* Определяем ширину заголовка */
+    text-align: left;
+}
+
+.product-specs td {
+    text-align: left;
+}
+
+/* Кнопка "Посмотреть больше" */
+.btn-show-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-show-more:hover {
+    background-color: #e9ecef;
+}
+
+.btn-show-more svg {
+    margin-left: 8px;
+}
+
+/* Мобильная версия */
+@media (max-width: 576px) {
+    .product-details {
+        padding: 15px;
+    }
+
+    .product-specs-header {
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .product-specs th,
+    .product-specs td {
+        padding: 8px;
+    }
+
+    .btn-show-more {
+        padding: 8px;
+    }
+}
+
+/* Анимация появления и исчезновения характеристик */
+.details-enter {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.details-enter-active {
+    max-height: 500px; /* Максимальная высота для содержимого (можно адаптировать) */
+    opacity: 1;
+}
+
+.details-exit {
+    max-height: 500px;
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.details-exit-active {
+    max-height: 0;
+    opacity: 0;
+}
+
+
+
+/* Дополнительные стили для других элементов страницы */
+.action-buttons-container {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.action-button:active{
+    background-color: #fff;
+}
+
+.action-button-outline {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.attribute-item {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.attribute-group {
+    margin-bottom: 1rem;
+}
+
+.attribute-buttons {
+    margin-top: 0.5rem;
+}
+
+.attribute-buttons .btn {
+    margin-right: 0.5rem;
+}
+
+/* ProductInfo.js */
+
+.product-info {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.products-title {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.prices-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.product-price-new {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+}
+
+.product-price-old {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.attributes-container {
+    margin-bottom: 20px;
+}
+
+.attribute-group {
+    margin-bottom: 10px;
+}
+
+.attribute-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.attribute-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+/* Общий стиль для всех опций */
+.attribute-option {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 8px 12px; /* Отступы для кнопок без цвета */
+}
+
+/* Выбранная опция */
+.attribute-option.selected {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+    transform: scale(1.1); /* Увеличение размера */
+}
+
+/* Специфичный стиль для цветных опций */
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0; /* Без отступов для цветных опций */
+}
+
+/* Выбранная цветная опция */
+.color-option.selected {
+    transform: scale(1.25); /* Увеличение размера при выборе */
+    border-color: #000;
+}
+
+.action-buttons-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.action-button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.action-button-outline {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.action-button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.additional-info {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+
+.quantity-controls {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Основные стили для кнопок действий */
+.action-buttons-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;  /* Отступ снизу */
+}
+
+.action-button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Для кнопки с контуром (Outline) */
+.action-button-outline {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+/* Для выключенной кнопки */
+.action-button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* При нажатии на кнопку */
+.action-button:active {
+    background-color: #444; /* Темнее при нажатии */
+    transform: scale(0.98);
+}
+
+/* Стили для блока с количеством товара */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Стиль кнопок изменения количества товара */
+.quantity-button {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* При наведении на кнопку */
+.quantity-button:hover {
+    background-color: #f8f9fa;
+}
+
+/* При нажатии на кнопку */
+.quantity-button:active {
+    transform: scale(0.95); /* Легкая анимация */
+}
+
+/* Отображение текущего количества */
+.quantity-display {
+    font-weight: bold;
+    color: #000;
+    font-size: 1.2rem;
+}
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1rem;
+}

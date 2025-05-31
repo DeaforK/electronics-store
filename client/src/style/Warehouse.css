@@ -1,0 +1,134 @@
+.warehouse-page {
+    display: flex;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.warehouse-list {
+    flex: 1;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.warehouse-list h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.warehouse-list .list-group-item {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: all 0.2s;
+    padding: 15px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.warehouse-list .list-group-item:hover {
+    background-color: #f0f0f0;
+}
+
+.warehouse-list .btn {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.map-container {
+    flex: 2;
+    height: 500px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-container .Loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.modal-title {
+    color: #333;
+    font-weight: bold;
+}
+
+.modal-body {
+    background-color: #ffffff;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+}
+
+.modal-footer .btn {
+    border-radius: 6px;
+}
+
+.button-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+.button-link:hover {
+    color: #000;
+}
+
+.loading-spinner {
+    margin: 50px auto;
+    color: #555;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #666666;
+    color: #ffffff;
+    border: none;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #444444;
+}
+
+.modal-footer .btn-primary {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #555555;
+}
+
+/* Кнопка возврата */
+.warehouse-list .btn-link {
+    color: #333333;
+    text-decoration: none;
+}
+
+.warehouse-list .btn-link:hover {
+    color: #555555;
+}
+.warehouse-list h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}

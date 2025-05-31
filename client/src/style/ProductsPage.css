@@ -1,0 +1,90 @@
+body {
+    background-color: #f8f9fa; /* Светло-серый фон страницы */
+    color: #333; /* Темно-серый цвет текста */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    color: #000; /* Черный цвет заголовка */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    background-color: #333; /* Темно-серый цвет для основной кнопки */
+    border-color: #333;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #555; /* Более светлый серый при наведении */
+    border-color: #555;
+  }
+  
+  .btn-success {
+    background-color: #666; /* Средне-серый цвет для второстепенных кнопок */
+    border-color: #666;
+    color: #fff;
+  }
+  
+  .btn-success:hover {
+    background-color: #888; /* Более светлый серый при наведении */
+    border-color: #888;
+  }
+  
+  .btn-danger {
+    background-color: #900; /* Темно-красный цвет для кнопки удаления */
+    border-color: #900;
+    color: #fff;
+  }
+  
+  .btn-danger:hover {
+    background-color: #b00; /* Более яркий красный при наведении */
+    border-color: #b00;
+  }
+  
+  .modal-content {
+    background-color: #fff; /* Белый фон для модальных окон */
+    border-color: #ddd; /* Светло-серые границы */
+  }
+  
+  .modal-header, .modal-footer {
+    border-bottom: 1px solid #ddd; /* Тонкие светло-серые границы */
+    border-top: 1px solid #ddd;
+  }
+  
+  .list-group-item {
+    background-color: #f9f9f9; /* Светло-серый фон для элементов списка */
+    border: 1px solid #eee; /* Очень светло-серая граница */
+    margin-bottom: 10px; /* Отступы между элементами списка */
+  }
+  
+  .list-group-item:hover {
+    background-color: #e6e6e6; /* Немного темнее при наведении */
+  }
+  
+  .form-control {
+    border: 1px solid #ccc; /* Серые границы для полей ввода */
+    box-shadow: none; /* Без тени */
+    color: #333; /* Темно-серый цвет текста в полях */
+  }
+  
+  .form-control:focus {
+    border-color: #666; /* Более темный серый при фокусе */
+    box-shadow: none;
+  }
+  
+  .table th,
+  .table td {
+    border-color: #ddd; /* Легкие границы для таблицы */
+    color: #333; /* Темный цвет текста */
+  }
+  
+  .table thead th {
+    background-color: #f0f0f0; /* Светло-серый фон для заголовков таблицы */
+  }
+  
+  .text-danger {
+    color: #b00; /* Красный цвет для сообщений об ошибках */
+  }
+  

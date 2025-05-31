@@ -1,0 +1,277 @@
+.filter-section {
+    background-color: #fff; /* Белый фон */
+    padding: 20px; /* Внутренние отступы */
+    border: 1px solid #e0e0e0; /* Серая граница */
+    border-radius: .5rem; /* Закругленные углы */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Тень */
+}
+
+/* Стили для заголовка фильтров */
+.filter-label {
+    margin-bottom: 10px; /* Отступ снизу */
+    cursor: pointer; /* Курсор указателя */
+}
+
+/* Стили для полей ввода */
+.filter-input {
+    width: 100%; /* Ширина 100% */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Стили для поля поиска */
+.search-input {
+    width: 100%; /* Ширина 100% */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+/* Стили для чекбоксов */
+.checkbox-label {
+    display: flex; /* Гибкий контейнер */
+    align-items: center; /* Выравнивание по центру */
+    margin-bottom: 5px; /* Отступ снизу */
+}
+
+.checkbox-label input {
+    margin-right: 10px; /* Отступ справа */
+}
+
+/* Стили для значений диапазона */
+.range-values {
+    display: flex; /* Гибкий контейнер */
+    justify-content: space-between; /* Равномерное распределение */
+}
+
+.range-values input {
+    width: 48%; /* Ширина 48% */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+/* Основной контейнер для слайдера диапазона */
+.range-slider {
+    position: relative; /* Относительное позиционирование */
+    height: 5px; /* Высота */
+    background: #ddd; /* Серый фон */
+    margin: 15px 0; /* Отступы сверху и снизу */
+    display: flex; /* Гибкий контейнер */
+    align-items: center; /* Выравнивание по центру */
+}
+
+/* Стили для элемента input[type="range"] */
+.range-slider input[type="range"] {
+    position: absolute; /* Абсолютное позиционирование */
+    width: 100%; /* Ширина 100% */
+    height: 5px; /* Высота */
+    -webkit-appearance: none; /* Убираем стандартный стиль в WebKit-браузерах */
+    background: transparent; /* Прозрачный фон */
+    pointer-events: none; /* Отключаем события указателя */
+}
+
+/* Стили для трека ползунка в WebKit-браузерах */
+.range-slider input[type="range"]::-webkit-slider-runnable-track {
+    height: 5px; /* Высота трека */
+    background: #ddd; /* Серый фон трека */
+}
+
+/* Стили для ползунка в WebKit-браузерах */
+.range-slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Убираем стандартный стиль в WebKit-браузерах */
+    pointer-events: all; /* Включаем события указателя */
+    width: 15px; /* Ширина ползунка */
+    height: 15px; /* Высота ползунка */
+    background: black; /* Синий фон ползунка */
+    border-radius: 50%; /* Закругленные углы */
+    bottom: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Стили для ползунка в браузерах на базе Gecko (Firefox) */
+.range-slider input[type="range"]::-moz-range-thumb {
+    pointer-events: all; /* Включаем события указателя */
+    width: 15px; /* Ширина ползунка */
+    height: 15px; /* Высота ползунка */
+    background: black; /* Синий фон ползунка */
+    border-radius: 50%; /* Закругленные углы */
+    bottom: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Стили для активного состояния ползунка */
+.range-slider input[type="range"]:focus {
+    outline: none; /* Убираем обводку */
+}
+
+/* Стили для трека диапазона */
+.range-track {
+    position: absolute; /* Абсолютное позиционирование */
+    height: 5px; /* Высота трека */
+    background: black; /* Градиентный фон трека */
+    z-index: 1; /* Положение по оси Z */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.catalog-main{
+    padding: 50px 100px;
+}
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+.product-card .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.filter-section {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-label {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.filter-input {
+    margin-bottom: 10px;
+}
+
+.checkbox-label {
+    margin-bottom: 5px;
+}
+
+.range-values input {
+    display: inline-block;
+    width: 45%;
+    margin-right: 5%;
+}
+
+.filter-button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+.pagination {
+    display: flex; /* Гибкий контейнер */
+    justify-content: center; /* Выравнивание по центру */
+    padding: 20px 0; /* Отступы сверху и снизу */
+}
+
+.pagination .page-item {
+    margin: 0 5px; /* Отступы слева и справа */
+}
+
+.pagination .page-link {
+    color: #000; /* Черный цвет текста */
+    background-color: #f8f9fa; /* Светлый фон */
+    border: none; /* Без границы */
+    border-radius: .5rem; /* Закругленные углы */
+    width: 2.5rem; /* Фиксированная ширина */
+    height: 2.5rem; /* Фиксированная высота */
+    display: flex; /* Гибкий контейнер */
+    justify-content: center; /* Выравнивание по центру */
+    align-items: center; /* Выравнивание по центру */
+    font-weight: bold; /* Жирный шрифт */
+}
+
+.pagination .page-link:hover {
+    text-decoration: none; /* Убираем подчеркивание */
+    background-color: #e9ecef; /* Более темный фон при наведении */
+}
+
+.pagination .page-link.active {
+    background-color: #000; /* Черный фон для активного элемента */
+    color: white; /* Белый цвет текста для активного элемента */
+    border-color: #000; /* Черная граница для активного элемента */
+}
+
+.pagination .page-link.disabled {
+    color: #6c757d; /* Серый цвет для неактивного элемента */
+    pointer-events: none; /* Отключаем события указателя */
+    background-color: transparent; /* Прозрачный фон */
+}
+.page-item .arrow{
+    background-color: white;
+}
+
+
+.custom-container {
+    display: flex; /* Flexbox для выравнивания элементов по горизонтали */
+    justify-content: space-between; /* Пространство между элементами */
+    align-items: center; /* Центрирование элементов по вертикали */
+}
+
+/* Стили для заголовка */
+.custom-container .title {
+    font-size: 16px; /* Размер шрифта */
+    font-weight: bold; /* Полужирный шрифт */
+    color: #000; /* Черный цвет текста */
+    margin: 0; /* Убираем отступы */
+}
+
+/* Стили для select */
+.custom-select {
+    background-color: #fff; /* Белый фон */
+    color: #000; /* Черный цвет текста */
+    border: 1px solid #dee2e6; /* Светло-серая граница */
+    border-radius: .25rem; /* Закругленные углы */
+    width: 200px; /* Фиксированная ширина */
+    height: 40px; /* Фиксированная высота */
+    padding: 0 40px 0 10px; /* Внутренние отступы (слева отступ для текста, справа для иконки) */
+    -webkit-appearance: none; /* Убираем стандартный стиль браузера */
+    -moz-appearance: none; /* Убираем стандартный стиль браузера */
+    appearance: none; /* Убираем стандартный стиль браузера */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23000" d="M2 0L0 2h4zM2 5L0 3h4z"/></svg>'); /* Иконка стрелки */
+    background-repeat: no-repeat; /* Убираем повторение иконки */
+    background-position: right 10px center; /* Позиция иконки */
+    background-size: 10px; /* Размер иконки */
+}
+
+.custom-select option {
+    color: #000; /* Черный цвет текста для опций */
+}
+
+
+/* Пример: styles.css или в глобальном стилевом файле */
+.collapsible-content {
+    overflow: hidden;
+    transition: max-height 1.5s ease, opacity 1s ease;
+    max-height: 0;
+    opacity: 0;
+}
+
+.collapsible-content.show {
+    max-height: 1000px; /* достаточно большое значение, чтобы вместить весь контент */
+    opacity: 1;
+}
+

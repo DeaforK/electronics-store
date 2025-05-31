@@ -1,0 +1,59 @@
+/* Courier.css */
+.courier-page {
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+
+.courier-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.courier-list-item {
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.courier-list-item:hover {
+    background-color: #f1f1f1;
+}
+
+.go-to-dashboard {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.loading-spinner {
+    color: #333;
+    margin-top: 20px;
+}
+
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.logout-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #dc3545;
+    background-color: #fff;
+    color: #dc3545;
+    transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #dc3545;
+    color: #fff;
+    border-color: #dc3545;
+}

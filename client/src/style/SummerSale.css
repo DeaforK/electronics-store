@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.summer-sale {
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+}
+
+.summer-sale-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.summer-sale-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.summer-sale-img-full {
+    display: block;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.summer-sale-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: inherit;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    font-size: 4vw;  /* Шрифт пропорционален ширине экрана */
+}
+
+
+.summer-sale-text h1 {
+    font-size: 64px;
+    font-weight: 200;
+    color: inherit;
+}
+
+.summer-sale-text p {
+    color: inherit;
+    font-size: 18px;
+}
+
+.summer-sale button {
+    padding: 15px 30px;
+}
+
+.summer-sale-title-with-button {
+    font-size: 6vw;  /* Заголовок также пропорционален экрану */
+}
+
+.summer-sale-title-with-button a {
+    position: relative;
+    left: 10%;
+    top: -180px;
+}
+
+.summer-sale-title-with-button button {
+    font-size: 1.5vw;  /* Размер кнопки также изменяется в зависимости от экрана */
+    padding: 10px 20px;  /* Размер кнопки */
+}
+
+.summer-sale-no-img {
+    min-height: 500px; /* Можно подстроить под контент */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+@media (max-width: 1000px) {
+    .summer-sale-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: inherit;
+        z-index: 2;
+        text-align: center;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    
+    .summer-sale-text h1 {
+        font-size: 48px;
+        font-weight: 200;
+        color: inherit;
+    }
+    
+    .summer-sale-text p {
+        color: inherit;
+        font-size: 18px;
+    }
+
+    .summer-sale-text {
+        font-size: 5vw;
+    }
+
+    .summer-sale-title-with-button {
+        font-size: 7vw;
+    }
+
+    .summer-sale-title-with-button button {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .summer-sale-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: inherit;
+        z-index: 2;
+        text-align: center;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    
+    .summer-sale-text h1 {
+        font-size: 32px;
+        font-weight: 200;
+        color: inherit;
+    }
+    
+    .summer-sale-text p {
+        color: inherit;
+        font-size: 14px;
+    }
+    .summer-sale button {
+        padding: 5px 10px;
+    }
+
+    .summer-sale-text {
+        font-size: 6vw;
+    }
+
+    .summer-sale-title-with-button {
+        font-size: 8vw;
+    }
+
+    .summer-sale-title-with-button button {
+        font-size: 3vw;
+    }
+}
