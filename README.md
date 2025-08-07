@@ -34,7 +34,7 @@
 ### 1. Клонировать репозиторий:
 
 ```bash
-git clone https://github.com/Deafork/diploma-electronics-store.git
+git clone https://github.com/Deafork/electronics-store.git
 cd название-репозитория
 ````
 
